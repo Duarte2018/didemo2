@@ -6,4 +6,10 @@
 - setter based DI
 - Constructor based DI (preferred method)
 
-### Spring Boot profiles
+### Spring boot concepts in this project
+
+- Dependency injection (constructor based)
+- MVC
+- web app
+- profiles
+- java configuration
