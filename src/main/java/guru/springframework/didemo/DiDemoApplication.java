@@ -1,5 +1,6 @@
 package guru.springframework.didemo;
 
+import guru.springframework.didemo.beans.FakeDataSource;
 import guru.springframework.didemo.controllers.ConstructorInjectedController;
 import guru.springframework.didemo.controllers.GetterInjectedController;
 import guru.springframework.didemo.controllers.MyController;
@@ -16,11 +17,14 @@ public class DiDemoApplication {
 
         MyController controller = (MyController) ctx.getBean("myController");
 
-
         System.out.println(controller.hello());
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
         System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
         System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+
+        FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+
+        System.out.println("\nfakedatasource properties: "+fakeDataSource.getUser() +" - "+fakeDataSource.getUrl()+"\n");
     }
 
 }
