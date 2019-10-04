@@ -16,6 +16,7 @@
 - service factory
 - central configuration class
 - properties configuration class
+- using multiple properties files
 
 
 To see all the autoconfigured options SpringBoot, run the app with "Debug output Enabled"
