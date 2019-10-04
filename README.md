@@ -15,9 +15,14 @@
 - java configuration
 - service factory
 - central configuration class
-- properties configuration class
-- using multiple properties files
+- [Externalized configuration][externalConfig] of properties:
+    - properties configuration class
+    - using multiple properties files
+    - using properties in yml file
+    - property files profiles
 
 
 To see all the autoconfigured options SpringBoot, run the app with "Debug output Enabled"
 in the Run Configurations.
+
+[externalConfig]:https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-external-config

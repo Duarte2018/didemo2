@@ -1,0 +1,30 @@
+# comment
+
+name: Rammstein
+
+names: # list of names
+  -John
+  -Paul
+  -Ringo
+
+cardinal: "#"
+
+book:
+  author: Peterson
+  publisher: Pub
+
+truth: yes
+
+another_true: True
+
+false: no #No , false, FALSE
+
+string_val: "This is it's quote"
+
+colon_string: "my: one two"
+
+multiple_line: |
+  asd sada
+  asda
+  asd
+

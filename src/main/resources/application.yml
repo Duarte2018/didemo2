@@ -1,0 +1,16 @@
+guru:
+  jms:
+    username: "Pedro yml"
+    password: jmspass
+    url: "jms.yml"
+
+--- # this indicates a file separator inside a yaml file
+
+spring:
+  profiles: de
+
+guru:
+  jms:
+    username: "German Pedro yml "
+    password: jmspass
+    url: "jms.yml"
