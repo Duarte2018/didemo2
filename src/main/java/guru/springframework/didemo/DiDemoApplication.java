@@ -1,6 +1,7 @@
 package guru.springframework.didemo;
 
 import guru.springframework.didemo.beans.FakeDataSource;
+import guru.springframework.didemo.beans.FakeJmsBroker;
 import guru.springframework.didemo.controllers.ConstructorInjectedController;
 import guru.springframework.didemo.controllers.GetterInjectedController;
 import guru.springframework.didemo.controllers.MyController;
@@ -25,6 +26,10 @@ public class DiDemoApplication {
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 
         System.out.println("\nfakedatasource properties: "+fakeDataSource.getUser() +" - "+fakeDataSource.getUrl()+"\n");
+
+        FakeJmsBroker jmsBroker = ctx.getBean(FakeJmsBroker.class);
+
+        System.out.println("\nJMS broker properties: "+jmsBroker.getUsername() +" - "+jmsBroker.getUrl()+"\n");
     }
 
 }
